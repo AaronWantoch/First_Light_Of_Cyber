@@ -317,6 +317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FPCamera: {fileID: 5390204040301928688}
   muzzleFlashFX: {fileID: 0}
+  hitFX: {fileID: 0}
   range: 100
   damage: 5
 --- !u!114 &6729153326786712243
@@ -333,6 +334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FPCamera: {fileID: 5390204040301928688}
   muzzleFlashFX: {fileID: 6671148282302155859}
+  hitFX: {fileID: 0}
   range: 100
   damage: 5
 --- !u!1001 &3500724522637113998
@@ -342,11 +344,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5390204040301928688}
     m_Modifications:
-    - target: {fileID: 7639727449737909763, guid: 7f77df0ae83531f4c96131075504f893,
-        type: 3}
-      propertyPath: FPCamera
-      value: 
-      objectReference: {fileID: 5390204040301928688}
     - target: {fileID: 2918361360652415849, guid: 7f77df0ae83531f4c96131075504f893,
         type: 3}
       propertyPath: m_Name
@@ -412,6 +409,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7639727449737909763, guid: 7f77df0ae83531f4c96131075504f893,
+        type: 3}
+      propertyPath: FPCamera
+      value: 
+      objectReference: {fileID: 5390204040301928688}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f77df0ae83531f4c96131075504f893, type: 3}
 --- !u!4 &1737383662879031753 stripped
