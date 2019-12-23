@@ -50,7 +50,7 @@ public class Weapon : MonoBehaviour
 
         GenerateHitParticles(hit);
 
-        EnemyHealth enemyHealth = hit.transform.GetComponent<EnemyHealth>();
+        EnemyHealth enemyHealth = hit.transform.GetComponentInParent<EnemyHealth>();
         if (!enemyHealth)
         {
             return;
