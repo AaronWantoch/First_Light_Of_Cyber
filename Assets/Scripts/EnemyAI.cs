@@ -8,6 +8,7 @@ public class EnemyAI : MonoBehaviour
 {
     [SerializeField] Transform player;
     [SerializeField] float chaseRange;
+    [SerializeField] float turnSpeed = 50f;
 
     NavMeshAgent navMeshAgent;
     Animator animator;
@@ -41,6 +42,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Engage()
     {
+        FaceTarget();
         if (distanceToPlayer <= navMeshAgent.stoppingDistance)
         {
             Fight();
@@ -68,5 +70,14 @@ public class EnemyAI : MonoBehaviour
         // Display the chase radius when selected
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, chaseRange);
+    }
+
+    void FaceTarget()
+    {
+        Vector3 direction = (player.position - transform.position).normalized;
+        Quaternion lookRotation =
+            Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+        transform.rotation =
+            Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnSpeed);
     }
 }

@@ -7,16 +7,19 @@ public class EnemyAttack : MonoBehaviour
 {
     [SerializeField] float damage = 30f;
 
-    Transform target;
+    PlayerHealth target;
 
     // Start is called before the first frame update
     void Start()
     {
-        target = FindObjectOfType<RigidbodyFirstPersonController>().transform;
+        target = FindObjectOfType<PlayerHealth>();
     }
 
     void DealDamage()
     {
         Debug.Log("bang");
+        target.DecreaseHealth(damage);
     }
+
+   
 }
