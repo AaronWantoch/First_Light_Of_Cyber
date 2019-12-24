@@ -182,6 +182,7 @@ GameObject:
   - component: {fileID: 5390204040315142000}
   - component: {fileID: 5390204040312883508}
   - component: {fileID: 7785082772046589897}
+  - component: {fileID: 8308343772659402928}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -315,23 +316,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dbf905cbd7a01849b5ce3a3bf67071c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6729153326786712243
+  health: 100
+--- !u!114 &8308343772659402928
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6671148282321589567}
+  m_GameObject: {fileID: 5390204040302165206}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b55b6fa5d4f2e5439b81b4be31cae09, type: 3}
+  m_Script: {fileID: 11500000, guid: 9825bb8ae9355294bbed363df6e6de98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FPCamera: {fileID: 5390204040301928688}
-  muzzleFlashFX: {fileID: 6671148282302155859}
-  hitFX: {fileID: 3875936227284149954, guid: d9134f398803e5945a33a2cbc21c5fb8, type: 3}
-  range: 100
-  damage: 5
+  defaultZoom: 60
+  zoom: 30
 --- !u!1001 &3500724522637113998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -489,23 +488,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1605391578731384218, guid: 5bfce893d67e7674387ac7bb8788a6a0,
+        type: 3}
+      propertyPath: FPCamera
+      value: 
+      objectReference: {fileID: 5390204040301928688}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bfce893d67e7674387ac7bb8788a6a0, type: 3}
---- !u!1 &6671148282321589567 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2348434796853021877, guid: 5bfce893d67e7674387ac7bb8788a6a0,
-    type: 3}
-  m_PrefabInstance: {fileID: 8936266483364469130}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6671148282321553695 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2348434796852596885, guid: 5bfce893d67e7674387ac7bb8788a6a0,
-    type: 3}
-  m_PrefabInstance: {fileID: 8936266483364469130}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &6671148282302155859 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 2348434796871996889, guid: 5bfce893d67e7674387ac7bb8788a6a0,
     type: 3}
   m_PrefabInstance: {fileID: 8936266483364469130}
   m_PrefabAsset: {fileID: 0}

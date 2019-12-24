@@ -143,7 +143,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2348434796852596887}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.5692444}
 --- !u!1 &2348434796853021873
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 2348434796852596885}
   - component: {fileID: 2348434796847273341}
   - component: {fileID: 2348434796843515773}
+  - component: {fileID: 1605391578731384218}
   m_Layer: 0
   m_Name: MachineGun_01
   m_TagString: Untagged
@@ -265,7 +266,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2348434796853021877}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: 5ba4ba99606f6244f93e0bc706ad240e, type: 3}
   m_Controller: {fileID: 9100000, guid: 74ced98fce89d964faa34aea8fe92762, type: 2}
   m_CullingMode: 0
@@ -276,6 +277,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1605391578731384218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2348434796853021877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b55b6fa5d4f2e5439b81b4be31cae09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPCamera: {fileID: 0}
+  muzzleFlashFX: {fileID: 2348434796871996889}
+  hitFX: {fileID: 3875936227284149954, guid: d9134f398803e5945a33a2cbc21c5fb8, type: 3}
+  range: 100
+  damage: 5
 --- !u!1 &2348434796853021879
 GameObject:
   m_ObjectHideFlags: 0

@@ -26,6 +26,10 @@ public class Weapon : MonoBehaviour
         {
             Shoot();
         }
+        else
+        {
+            //muzzleFlashFX.Stop();
+        }
     }
 
     private void Shoot()
