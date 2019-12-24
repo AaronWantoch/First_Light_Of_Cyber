@@ -51,13 +51,13 @@ public class Weapon : MonoBehaviour
         GenerateHitParticles(hit);
 
         EnemyHealth enemyHealth = hit.transform.GetComponentInParent<EnemyHealth>();
-        if (!enemyHealth)
+        EnemyAI enemyAI = hit.transform.GetComponentInParent<EnemyAI>();
+        if (!enemyHealth || !enemyAI)
         {
             return;
         }
+
         enemyHealth.DecreaseHealth(damage);
-
-
     }
 
     private void GenerateHitParticles(RaycastHit hit)

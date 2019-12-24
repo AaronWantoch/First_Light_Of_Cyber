@@ -9,12 +9,14 @@ public class GameManager : MonoBehaviour
 
     public void PlayAgain()
     {
+        Time.timeScale = 1f;
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void Quit()
     {
-        Quit();
+        Application.Quit();
     }
 
     public void ActivateDeathScreen()

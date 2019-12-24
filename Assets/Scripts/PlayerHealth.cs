@@ -11,7 +11,17 @@ public class PlayerHealth : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
-            FindObjectOfType<GameManager>().ActivateDeathScreen();
+            HandleDeath();
         }
+    }
+
+    private static void HandleDeath()
+    {
+        FindObjectOfType<GameManager>().ActivateDeathScreen();
+
+        Time.timeScale = 0f;
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }
