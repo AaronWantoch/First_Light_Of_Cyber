@@ -28,19 +28,14 @@ public class Weapon : MonoBehaviour
         }
         else
         {
-            //muzzleFlashFX.Stop();
+            ControllGuns(false);
         }
     }
 
     private void Shoot()
     {
-        EmittMuzzleFlashParticles();
+        ControllGuns(true);
         ProcessRaycast();
-    }
-
-    private void EmittMuzzleFlashParticles()
-    {
-        muzzleFlashFX.Play();
     }
 
     private void ProcessRaycast()
@@ -89,5 +84,14 @@ public class Weapon : MonoBehaviour
         }
 
         return maximumDuration;
+    }
+
+    void ControllGuns(bool activate)
+    {
+        
+        ParticleSystem.EmissionModule emiter = muzzleFlashFX.emission;
+
+        emiter.enabled = activate;
+        
     }
 }
