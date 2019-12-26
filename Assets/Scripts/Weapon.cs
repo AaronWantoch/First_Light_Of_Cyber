@@ -13,17 +13,17 @@ public class Weapon : MonoBehaviour
     [SerializeField] float range = 100f;
     [SerializeField] float damage = 5f;
 
+    Ammo ammo;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        ammo = GetComponent<Ammo>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (CrossPlatformInputManager.GetButton("Fire1"))
+        if (CrossPlatformInputManager.GetButtonDown("Fire1"))
         {
             Shoot();
         }
@@ -35,8 +35,14 @@ public class Weapon : MonoBehaviour
 
     private void Shoot()
     {
-        ControllGuns(true);
-        ProcessRaycast();
+        if (ammo.GetAmmoAmount() > 0)
+        {
+            ControllGuns(true);
+            ProcessRaycast();
+            ammo.DecreaseAmmoAmount();
+        }
+        else
+            Debug.Log("out of ammo");
     }
 
     private void ProcessRaycast()
@@ -89,10 +95,8 @@ public class Weapon : MonoBehaviour
 
     void ControllGuns(bool activate)
     {
-        
         ParticleSystem.EmissionModule emiter = muzzleFlashFX.emission;
 
         emiter.enabled = activate;
-        
     }
 }

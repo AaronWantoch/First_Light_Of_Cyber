@@ -183,6 +183,7 @@ GameObject:
   - component: {fileID: 5390204040312883508}
   - component: {fileID: 7785082772046589897}
   - component: {fileID: 8308343772659402928}
+  - component: {fileID: 3467106815984605588}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -332,7 +333,19 @@ MonoBehaviour:
   defaultZoom: 60
   zoom: 30
   defaultSensitivity: 2
-  sensitivity: 1
+  sensitivity: 0.5
+--- !u!114 &3467106815984605588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5390204040302165206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 182f00b3f14c8114dbce4dda1a5517fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3500724522637113998
 PrefabInstance:
   m_ObjectHideFlags: 0

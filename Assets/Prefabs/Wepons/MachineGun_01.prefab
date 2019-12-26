@@ -218,6 +218,7 @@ GameObject:
   - component: {fileID: 2348434796847273341}
   - component: {fileID: 2348434796843515773}
   - component: {fileID: 1605391578731384218}
+  - component: {fileID: 4094973344604035474}
   m_Layer: 0
   m_Name: MachineGun_01
   m_TagString: Untagged
@@ -294,6 +295,19 @@ MonoBehaviour:
   hitFX: {fileID: 3875936227284149954, guid: d9134f398803e5945a33a2cbc21c5fb8, type: 3}
   range: 100
   damage: 5
+--- !u!114 &4094973344604035474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2348434796853021877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 182f00b3f14c8114dbce4dda1a5517fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoAmount: 10
 --- !u!1 &2348434796853021879
 GameObject:
   m_ObjectHideFlags: 0

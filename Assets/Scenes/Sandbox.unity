@@ -12673,10 +12673,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8308343772659402928, guid: 22fd581f07a9c964d969e8221c65101d,
+    - target: {fileID: 6525946502658223245, guid: 22fd581f07a9c964d969e8221c65101d,
         type: 3}
-      propertyPath: sensitivity
-      value: 0.1
+      propertyPath: damage
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8481186434893193811, guid: 22fd581f07a9c964d969e8221c65101d,
         type: 3}
@@ -12703,7 +12703,8 @@ PrefabInstance:
       propertyPath: EmissionModule.enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3467106815984605588, guid: 22fd581f07a9c964d969e8221c65101d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 22fd581f07a9c964d969e8221c65101d, type: 3}
 --- !u!1001 &6461112609030257348
 PrefabInstance:
