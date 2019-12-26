@@ -512,16 +512,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MuzzleFlash
       objectReference: {fileID: 0}
-    - target: {fileID: 198719912503724044, guid: e802c9c5b472d2345a808aca4bc81014,
-        type: 3}
-      propertyPath: ShapeModule.enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 198719912503724044, guid: e802c9c5b472d2345a808aca4bc81014,
-        type: 3}
-      propertyPath: EmissionModule.enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4977485751071522, guid: e802c9c5b472d2345a808aca4bc81014, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.729
@@ -564,6 +554,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4977485751071522, guid: e802c9c5b472d2345a808aca4bc81014, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198719912503724044, guid: e802c9c5b472d2345a808aca4bc81014,
+        type: 3}
+      propertyPath: ShapeModule.enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
