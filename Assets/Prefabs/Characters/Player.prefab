@@ -231,10 +231,10 @@ CapsuleCollider:
   m_Material: {fileID: 13400000, guid: 10810ce4a193be54299f5b9d6489cf27, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 1.6
+  m_Radius: 0.92436147
+  m_Height: 2.250722
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: -6.4585652e-15, y: 0, z: 0.42436147}
 --- !u!114 &5390204040312883508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,6 +331,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultZoom: 60
   zoom: 30
+  defaultSensitivity: 2
+  sensitivity: 1
 --- !u!1001 &3500724522637113998
 PrefabInstance:
   m_ObjectHideFlags: 0
