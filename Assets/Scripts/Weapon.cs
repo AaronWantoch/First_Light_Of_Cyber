@@ -12,8 +12,11 @@ public class Weapon : MonoBehaviour
 
     [SerializeField] float range = 100f;
     [SerializeField] float damage = 5f;
+    [SerializeField] float shootDelay = 0.5f;
 
     Ammo ammo;
+
+    bool canShoot = true;
 
     private void Start()
     {
@@ -23,26 +26,33 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (CrossPlatformInputManager.GetButtonDown("Fire1"))
+        if (CrossPlatformInputManager.GetButton("Fire1") && canShoot)
         {
-            Shoot();
+            StartCoroutine(Shoot());
         }
         else
         {
-            ControllGuns(false);
+            UseMuzzleFlash(false);
         }
     }
 
-    private void Shoot()
+    private IEnumerator Shoot()
     {
+        canShoot = false;
         if (ammo.GetAmmoAmount() > 0)
         {
-            ControllGuns(true);
+            UseMuzzleFlash(true);
             ProcessRaycast();
             ammo.DecreaseAmmoAmount();
         }
         else
+        {
             Debug.Log("out of ammo");
+        }
+
+        yield return new WaitForSeconds(shootDelay);
+
+        canShoot = true;
     }
 
     private void ProcessRaycast()
@@ -93,7 +103,7 @@ public class Weapon : MonoBehaviour
         return maximumDuration;
     }
 
-    void ControllGuns(bool activate)
+    void UseMuzzleFlash(bool activate)
     {
         ParticleSystem.EmissionModule emiter = muzzleFlashFX.emission;
 

@@ -17,7 +17,6 @@ public class EnemyAttack : MonoBehaviour
 
     void DealDamage()
     {
-        Debug.Log("bang");
         target.DecreaseHealth(damage);
     }
 

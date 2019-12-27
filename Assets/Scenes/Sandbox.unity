@@ -12636,7 +12636,7 @@ PrefabInstance:
     - target: {fileID: 6671148282321589567, guid: 22fd581f07a9c964d969e8221c65101d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8602836718874155389, guid: 22fd581f07a9c964d969e8221c65101d,
         type: 3}
@@ -12673,11 +12673,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6525946502658223245, guid: 22fd581f07a9c964d969e8221c65101d,
-        type: 3}
-      propertyPath: damage
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 8481186434893193811, guid: 22fd581f07a9c964d969e8221c65101d,
         type: 3}
       propertyPath: playOnAwake
@@ -12703,8 +12698,62 @@ PrefabInstance:
       propertyPath: EmissionModule.enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3467106815984605588, guid: 22fd581f07a9c964d969e8221c65101d, type: 3}
+    - target: {fileID: 495174245815049852, guid: 22fd581f07a9c964d969e8221c65101d,
+        type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9051491775236837259, guid: 22fd581f07a9c964d969e8221c65101d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6525946502658223245, guid: 22fd581f07a9c964d969e8221c65101d,
+        type: 3}
+      propertyPath: shootDelay
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6525946502658223245, guid: 22fd581f07a9c964d969e8221c65101d,
+        type: 3}
+      propertyPath: damage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6525946502658223245, guid: 22fd581f07a9c964d969e8221c65101d,
+        type: 3}
+      propertyPath: range
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436102002537397386, guid: 22fd581f07a9c964d969e8221c65101d,
+        type: 3}
+      propertyPath: ammoAmount
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7657386174525936656, guid: 22fd581f07a9c964d969e8221c65101d,
+        type: 3}
+      propertyPath: shootDelay
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960639719155826712, guid: 22fd581f07a9c964d969e8221c65101d,
+        type: 3}
+      propertyPath: ammoAmount
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 3924361526940922367, guid: 22fd581f07a9c964d969e8221c65101d,
+        type: 3}
+      propertyPath: damage
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3924361526940922367, guid: 22fd581f07a9c964d969e8221c65101d,
+        type: 3}
+      propertyPath: shootDelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3924361526940922367, guid: 22fd581f07a9c964d969e8221c65101d,
+        type: 3}
+      propertyPath: range
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22fd581f07a9c964d969e8221c65101d, type: 3}
 --- !u!1001 &6461112609030257348
 PrefabInstance:
