@@ -24,36 +24,36 @@ public class Weapon : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (CrossPlatformInputManager.GetButton("Fire1") && canShoot)
-        {
-            StartCoroutine(Shoot());
-        }
-        else
-        {
-            UseMuzzleFlash(false);
-        }
-    }
+    //void Update()
+    //{
+    //    if (CrossPlatformInputManager.GetButton("Fire1") && canShoot)
+    //    {
+    //        StartCoroutine(Shoot());
+    //    }
+    //    else
+    //    {
+    //        UseMuzzleFlash(false);
+    //    }
+    //}
 
-    private IEnumerator Shoot()
-    {
-        canShoot = false;
-        if (ammo.GetAmmoAmount() > 0)
-        {
-            UseMuzzleFlash(true);
-            ProcessRaycast();
-            ammo.DecreaseAmmoAmount();
-        }
-        else
-        {
-            Debug.Log("out of ammo");
-        }
+    //private IEnumerator Shoot()
+    //{
+    //    canShoot = false;
+    //    if (ammo.GetAmmoAmount() > 0)
+    //    {
+    //        UseMuzzleFlash(true);
+    //        ProcessRaycast();
+    //        ammo.DecreaseAmmoAmount();
+    //    }
+    //    else
+    //    {
+    //        Debug.Log("out of ammo");
+    //    }
 
-        yield return new WaitForSeconds(shootDelay);
+    //    yield return new WaitForSeconds(shootDelay);
 
-        canShoot = true;
-    }
+    //    canShoot = true;
+    //}
 
     private void ProcessRaycast()
     {
@@ -108,5 +108,10 @@ public class Weapon : MonoBehaviour
         ParticleSystem.EmissionModule emiter = muzzleFlashFX.emission;
 
         emiter.enabled = activate;
+    }
+
+    private void OnDisable()
+    {
+        canShoot = true;
     }
 }

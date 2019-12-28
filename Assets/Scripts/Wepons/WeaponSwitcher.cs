@@ -31,7 +31,7 @@ public class WeaponSwitcher : MonoBehaviour
 
     private void HandleScrollWheel()
     {
-        if (Input.GetAxis("Mouse ScrollWheel") > 0f)
+        if (Input.GetAxis("Mouse ScrollWheel") < 0f)
         {
             if (currentWeapon == weapons.Length - 1)
                 ChangeWeapon(0);
@@ -39,7 +39,7 @@ public class WeaponSwitcher : MonoBehaviour
                 ChangeWeapon(currentWeapon + 1);
         }
         
-        else if (Input.GetAxis("Mouse ScrollWheel") < 0f)
+        else if (Input.GetAxis("Mouse ScrollWheel") > 0f)
         {
             if (currentWeapon == 0)
                 ChangeWeapon(weapons.Length - 1);

@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2921005863691909959}
   - component: {fileID: 7639727449737909763}
-  - component: {fileID: 7621413058713437700}
   - component: {fileID: 5727096871419106125}
   m_Layer: 0
   m_Name: Handgun_M1911A_Black
@@ -52,19 +51,7 @@ MonoBehaviour:
   hitFX: {fileID: 3875936227284149954, guid: d9134f398803e5945a33a2cbc21c5fb8, type: 3}
   range: 100
   damage: 20
---- !u!114 &7621413058713437700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2918361360652415849}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 182f00b3f14c8114dbce4dda1a5517fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ammoAmount: 10
+  shootDelay: 0.5
 --- !u!114 &5727096871419106125
 MonoBehaviour:
   m_ObjectHideFlags: 0

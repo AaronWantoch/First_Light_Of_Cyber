@@ -1,0 +1,30 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Ammo : MonoBehaviour
+{
+    [SerializeField] AmmoSlot[] ammoSlots;
+
+    [System.Serializable]
+    private class AmmoSlot
+    {
+        public AmmoTypes ammoType;
+        public int ammoAmount = 10;
+    }
+
+    //public void DecreaseAmmoAmount()
+    //{
+    //    ammoAmount--;
+    //}
+
+    //public void IncreaseAmmoAmount(int additionalAmmo)
+    //{
+    //    ammoAmount += additionalAmmo;
+    //}
+
+    //public int GetAmmoAmount()
+    //{
+    //    return ammoAmount;
+    //}
+}
