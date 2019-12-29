@@ -9,6 +9,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] Transform FPCamera;
     [SerializeField] ParticleSystem muzzleFlashFX;
     [SerializeField] GameObject hitFX;
+    [SerializeField] AmmoType ammoType;
 
     [SerializeField] float range = 100f;
     [SerializeField] float damage = 5f;
@@ -20,40 +21,39 @@ public class Weapon : MonoBehaviour
 
     private void Start()
     {
-        ammo = GetComponent<Ammo>();
+        ammo = GetComponentInParent<Ammo>();
     }
 
-    // Update is called once per frame
-    //void Update()
-    //{
-    //    if (CrossPlatformInputManager.GetButton("Fire1") && canShoot)
-    //    {
-    //        StartCoroutine(Shoot());
-    //    }
-    //    else
-    //    {
-    //        UseMuzzleFlash(false);
-    //    }
-    //}
+    void Update()
+    {
+        if (CrossPlatformInputManager.GetButton("Fire1") && canShoot)
+        {
+            StartCoroutine(Shoot());
+        }
+        else
+        {
+            UseMuzzleFlash(false);
+        }
+    }
 
-    //private IEnumerator Shoot()
-    //{
-    //    canShoot = false;
-    //    if (ammo.GetAmmoAmount() > 0)
-    //    {
-    //        UseMuzzleFlash(true);
-    //        ProcessRaycast();
-    //        ammo.DecreaseAmmoAmount();
-    //    }
-    //    else
-    //    {
-    //        Debug.Log("out of ammo");
-    //    }
+    private IEnumerator Shoot()
+    {
+        canShoot = false;
+        if (ammo.GetAmmoAmount(ammoType) > 0)
+        {
+            UseMuzzleFlash(true);
+            ProcessRaycast();
+            ammo.DecreaseAmmoAmount(ammoType);
+        }
+        else
+        {
+            Debug.Log("out of ammo");
+        }
 
-    //    yield return new WaitForSeconds(shootDelay);
+        yield return new WaitForSeconds(shootDelay);
 
-    //    canShoot = true;
-    //}
+        canShoot = true;
+    }
 
     private void ProcessRaycast()
     {

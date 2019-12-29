@@ -1,4 +1,4 @@
-﻿public enum AmmoTypes
+﻿public enum AmmoType
 {
     PistolBullets,
     CarabineBullets,

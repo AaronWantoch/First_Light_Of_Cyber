@@ -9,22 +9,34 @@ public class Ammo : MonoBehaviour
     [System.Serializable]
     private class AmmoSlot
     {
-        public AmmoTypes ammoType;
+        public AmmoType ammoType;
         public int ammoAmount = 10;
     }
 
-    //public void DecreaseAmmoAmount()
-    //{
-    //    ammoAmount--;
-    //}
+    public void DecreaseAmmoAmount(AmmoType ammoType)
+    {
+        GetAmmoSlot(ammoType).ammoAmount--;
+    }
 
-    //public void IncreaseAmmoAmount(int additionalAmmo)
-    //{
-    //    ammoAmount += additionalAmmo;
-    //}
+    public void IncreaseAmmoAmount(AmmoType ammoType, int additionalAmmo)
+    {
+        GetAmmoSlot(ammoType).ammoAmount += additionalAmmo;
+    }
 
-    //public int GetAmmoAmount()
-    //{
-    //    return ammoAmount;
-    //}
+    public int GetAmmoAmount(AmmoType ammoType)
+    {
+        return GetAmmoSlot(ammoType).ammoAmount;
+    }
+
+    private AmmoSlot GetAmmoSlot(AmmoType ammoType)
+    {
+        foreach(AmmoSlot ammoSlot in ammoSlots)
+        {
+            if (ammoSlot.ammoType == ammoType)
+                return ammoSlot;
+        }
+
+        Debug.LogError("Ammo type don't exist on player");
+        return null;
+    }
 }
