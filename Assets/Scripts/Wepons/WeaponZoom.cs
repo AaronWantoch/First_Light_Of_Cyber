@@ -26,15 +26,23 @@ public class WeaponZoom : MonoBehaviour
         //float scroll = Input.GetAxis("Mouse ScrollWheel");
         if (Input.GetMouseButton(1))
         {
-            camera.fieldOfView = zoom;
-            player.mouseLook.XSensitivity = sensitivity;
-            player.mouseLook.YSensitivity = sensitivity;
+            ChangeZoomState(zoom, sensitivity);
         }
         else
         {
-            camera.fieldOfView = defaultZoom;
-            player.mouseLook.XSensitivity = defaultSensitivity;
-            player.mouseLook.YSensitivity = defaultSensitivity;
+            ChangeZoomState(defaultZoom, defaultSensitivity);
         }
+    }
+
+    private void ChangeZoomState(float newZoom, float newSensitivity)
+    {
+        camera.fieldOfView = newZoom;
+        player.mouseLook.XSensitivity = newSensitivity;
+        player.mouseLook.YSensitivity = newSensitivity;
+    }
+
+    private void OnDisable()
+    {
+        ChangeZoomState(defaultZoom, defaultSensitivity);
     }
 }
