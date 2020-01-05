@@ -30,10 +30,6 @@ public class Weapon : MonoBehaviour
         {
             StartCoroutine(Shoot());
         }
-        else
-        {
-            UseMuzzleFlash(false);
-        }
     }
 
     private IEnumerator Shoot()
@@ -41,7 +37,7 @@ public class Weapon : MonoBehaviour
         canShoot = false;
         if (ammo.GetAmmoAmount(ammoType) > 0)
         {
-            UseMuzzleFlash(true);
+            UseMuzzleFlash();
             ProcessRaycast();
             ammo.DecreaseAmmoAmount(ammoType);
         }
@@ -103,11 +99,9 @@ public class Weapon : MonoBehaviour
         return maximumDuration;
     }
 
-    void UseMuzzleFlash(bool activate)
+    void UseMuzzleFlash()
     {
-        ParticleSystem.EmissionModule emiter = muzzleFlashFX.emission;
-
-        emiter.enabled = activate;
+        muzzleFlashFX.Play();
     }
 
     private void OnDisable()

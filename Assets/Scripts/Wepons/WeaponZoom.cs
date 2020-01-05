@@ -14,7 +14,7 @@ public class WeaponZoom : MonoBehaviour
     Camera camera;
     RigidbodyFirstPersonController player;
 
-    private void Start()
+    private void OnEnable()
     {
         camera = GetComponentInParent<Camera>();
         player = GetComponentInParent<RigidbodyFirstPersonController>();

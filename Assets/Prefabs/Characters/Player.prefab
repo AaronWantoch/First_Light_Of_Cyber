@@ -196,14 +196,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5390204040302165206}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0.00000028088027}
   m_LocalPosition: {x: 0, y: 1.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5390204040301928688}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 179.99998, z: 0}
 --- !u!54 &5390204040305319856
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -330,11 +330,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ammoSlots:
   - ammoType: 0
-    ammoAmount: 0
+    ammoAmount: 12
   - ammoType: 1
-    ammoAmount: 0
+    ammoAmount: 40
   - ammoType: 2
-    ammoAmount: 0
+    ammoAmount: 8
 --- !u!1 &7732630589727155968
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,11 +394,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MARMO3
       objectReference: {fileID: 0}
-    - target: {fileID: 6768173464717156776, guid: 30d234bdfab1f924f90c50f91929cf17,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6768173464717589896, guid: 30d234bdfab1f924f90c50f91929cf17,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -441,49 +436,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6768173464717589896, guid: 30d234bdfab1f924f90c50f91929cf17,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.278277
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6768173464717589896, guid: 30d234bdfab1f924f90c50f91929cf17,
         type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.278277
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 6768173464717589896, guid: 30d234bdfab1f924f90c50f91929cf17,
         type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.27827677
-      objectReference: {fileID: 0}
-    - target: {fileID: 2629944803677929503, guid: 30d234bdfab1f924f90c50f91929cf17,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.13
-      objectReference: {fileID: 0}
-    - target: {fileID: 2629944803677929503, guid: 30d234bdfab1f924f90c50f91929cf17,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2629944803677929503, guid: 30d234bdfab1f924f90c50f91929cf17,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.56
-      objectReference: {fileID: 0}
-    - target: {fileID: 2629741707672134145, guid: 30d234bdfab1f924f90c50f91929cf17,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.12
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1586982565064581084, guid: 30d234bdfab1f924f90c50f91929cf17,
         type: 3}
       propertyPath: FPCamera
       value: 
       objectReference: {fileID: 5390204040301928688}
-    - target: {fileID: 2787482529402092337, guid: 30d234bdfab1f924f90c50f91929cf17,
-        type: 3}
-      propertyPath: EmissionModule.enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30d234bdfab1f924f90c50f91929cf17, type: 3}
 --- !u!4 &9051491775236740011 stripped
@@ -503,11 +473,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Handgun_M1911A_Black
-      objectReference: {fileID: 0}
-    - target: {fileID: 2918361360652415849, guid: 7f77df0ae83531f4c96131075504f893,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2921005863691909959, guid: 7f77df0ae83531f4c96131075504f893,
         type: 3}
@@ -589,11 +554,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MachineGun_01
       objectReference: {fileID: 0}
-    - target: {fileID: 2348434796853021877, guid: 5bfce893d67e7674387ac7bb8788a6a0,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2348434796852596885, guid: 5bfce893d67e7674387ac7bb8788a6a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -659,10 +619,10 @@ PrefabInstance:
       propertyPath: FPCamera
       value: 
       objectReference: {fileID: 5390204040301928688}
-    - target: {fileID: 1605391578731384218, guid: 5bfce893d67e7674387ac7bb8788a6a0,
+    - target: {fileID: 2348434796871996889, guid: 5bfce893d67e7674387ac7bb8788a6a0,
         type: 3}
-      propertyPath: shootDelay
-      value: 1
+      propertyPath: lengthInSec
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bfce893d67e7674387ac7bb8788a6a0, type: 3}

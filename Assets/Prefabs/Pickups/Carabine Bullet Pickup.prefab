@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!65 &2577899752071116375
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7961567282544685571}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 0.99999994}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &5180785319216267480
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2997413344870363867, guid: 6e9695d7249729d4aab76c5322160e8d,
+        type: 3}
+      propertyPath: m_Name
+      value: Carabine Bullet Pickup
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423839966558366028, guid: 6e9695d7249729d4aab76c5322160e8d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.1029358
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423839966558366028, guid: 6e9695d7249729d4aab76c5322160e8d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.486758
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423839966558366028, guid: 6e9695d7249729d4aab76c5322160e8d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.11940861
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423839966558366028, guid: 6e9695d7249729d4aab76c5322160e8d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423839966558366028, guid: 6e9695d7249729d4aab76c5322160e8d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423839966558366028, guid: 6e9695d7249729d4aab76c5322160e8d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423839966558366028, guid: 6e9695d7249729d4aab76c5322160e8d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423839966558366028, guid: 6e9695d7249729d4aab76c5322160e8d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423839966558366028, guid: 6e9695d7249729d4aab76c5322160e8d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423839966558366028, guid: 6e9695d7249729d4aab76c5322160e8d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423839966558366028, guid: 6e9695d7249729d4aab76c5322160e8d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423839966558366028, guid: 6e9695d7249729d4aab76c5322160e8d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 6640653320533432902, guid: 6e9695d7249729d4aab76c5322160e8d,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 3438825521731776148, guid: 6e9695d7249729d4aab76c5322160e8d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0f48e2451b2b94741b38d3eebc3c6511, type: 2}
+    - target: {fileID: 2132912026093456621, guid: 6e9695d7249729d4aab76c5322160e8d,
+        type: 3}
+      propertyPath: ammoType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132912026093456621, guid: 6e9695d7249729d4aab76c5322160e8d,
+        type: 3}
+      propertyPath: amount
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2008239801524804853, guid: 6e9695d7249729d4aab76c5322160e8d, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 6e9695d7249729d4aab76c5322160e8d, type: 3}
+--- !u!1 &7961567282544685571 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2997413344870363867, guid: 6e9695d7249729d4aab76c5322160e8d,
+    type: 3}
+  m_PrefabInstance: {fileID: 5180785319216267480}
+  m_PrefabAsset: {fileID: 0}

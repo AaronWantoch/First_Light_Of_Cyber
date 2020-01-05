@@ -11,7 +11,7 @@ public class Pickup : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Ammo ammo = 
-            other.GetComponentInChildren<Ammo>();
+            other.GetComponent<Ammo>();
         if(!ammo)
         {
             return;
