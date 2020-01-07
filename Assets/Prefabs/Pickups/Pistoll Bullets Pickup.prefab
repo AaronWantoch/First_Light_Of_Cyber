@@ -1,5 +1,215 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1024136067482384848
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2491756907789532360}
+    m_Modifications:
+    - target: {fileID: 662478367500556873, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_Name
+      value: Pistol Bullet Model (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.412
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.094
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556869, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556872, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 662478367500556872, guid: 96e83dc265c27784eb2c7555c121890f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 96e83dc265c27784eb2c7555c121890f, type: 3}
+--- !u!1001 &1744183223747956927
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2491756907789532360}
+    m_Modifications:
+    - target: {fileID: 662478367500556873, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_Name
+      value: Pistol Bullet Model (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.000000007450581
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.2016864
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.086
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556869, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556872, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 662478367500556872, guid: 96e83dc265c27784eb2c7555c121890f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 96e83dc265c27784eb2c7555c121890f, type: 3}
+--- !u!1001 &5766028856666252794
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2491756907789532360}
+    m_Modifications:
+    - target: {fileID: 662478367500556873, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_Name
+      value: Pistol Bullet Model
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.296
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.107
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556869, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556872, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 662478367500556872, guid: 96e83dc265c27784eb2c7555c121890f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 96e83dc265c27784eb2c7555c121890f, type: 3}
 --- !u!1001 &6229325346023970180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10,7 +220,7 @@ PrefabInstance:
     - target: {fileID: 2997413344870363867, guid: 6e9695d7249729d4aab76c5322160e8d,
         type: 3}
       propertyPath: m_Name
-      value: Pickup
+      value: Pistoll Bullets Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 8423839966558366028, guid: 6e9695d7249729d4aab76c5322160e8d,
         type: 3}
@@ -74,3 +284,84 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f534431cfb84eb84189bc55febda07ed, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e9695d7249729d4aab76c5322160e8d, type: 3}
+--- !u!4 &2491756907789532360 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8423839966558366028, guid: 6e9695d7249729d4aab76c5322160e8d,
+    type: 3}
+  m_PrefabInstance: {fileID: 6229325346023970180}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6860358514771504918
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2491756907789532360}
+    m_Modifications:
+    - target: {fileID: 662478367500556873, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_Name
+      value: Pistol Bullet Model (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.412
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556868, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.296
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556869, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 662478367500556872, guid: 96e83dc265c27784eb2c7555c121890f,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 662478367500556872, guid: 96e83dc265c27784eb2c7555c121890f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 96e83dc265c27784eb2c7555c121890f, type: 3}

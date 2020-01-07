@@ -80,21 +80,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8423839966558366028, guid: 6e9695d7249729d4aab76c5322160e8d,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 6640653320533432902, guid: 6e9695d7249729d4aab76c5322160e8d,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-    - target: {fileID: 3438825521731776148, guid: 6e9695d7249729d4aab76c5322160e8d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 0f48e2451b2b94741b38d3eebc3c6511, type: 2}
     - target: {fileID: 2132912026093456621, guid: 6e9695d7249729d4aab76c5322160e8d,
         type: 3}
       propertyPath: ammoType
@@ -105,6 +90,16 @@ PrefabInstance:
       propertyPath: amount
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 3438825521731776148, guid: 6e9695d7249729d4aab76c5322160e8d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0f48e2451b2b94741b38d3eebc3c6511, type: 2}
+    - target: {fileID: 6640653320533432902, guid: 6e9695d7249729d4aab76c5322160e8d,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents:
     - {fileID: 2008239801524804853, guid: 6e9695d7249729d4aab76c5322160e8d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6e9695d7249729d4aab76c5322160e8d, type: 3}
