@@ -8,15 +8,19 @@ public class EnemyAttack : MonoBehaviour
     [SerializeField] float damage = 30f;
 
     PlayerHealth target;
+    ParticleSystem particle;
 
     // Start is called before the first frame update
     void Start()
     {
+        //particle = GetComponentInChildren<ParticleSystem>();
         target = FindObjectOfType<PlayerHealth>();
     }
 
     void DealDamage()
     {
         target.DecreaseHealth(damage);
+        target.GetComponent<DisplayDamage>().Display();
+        //particle.Play();
     }
 }

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
+using UnityEngine.UI;
 
 public class Weapon : MonoBehaviour
 {
@@ -19,9 +20,10 @@ public class Weapon : MonoBehaviour
 
     bool canShoot = true;
 
-    private void Start()
+    private void OnEnable()
     {
         ammo = GetComponentInParent<Ammo>();
+        ammo.UpdateUI(ammoType);
     }
 
     void Update()
@@ -40,6 +42,7 @@ public class Weapon : MonoBehaviour
             UseMuzzleFlash();
             ProcessRaycast();
             ammo.DecreaseAmmoAmount(ammoType);
+            ammo.UpdateUI(ammoType);
         }
         else
         {
@@ -107,5 +110,10 @@ public class Weapon : MonoBehaviour
     private void OnDisable()
     {
         canShoot = true;
+    }
+
+    public AmmoType GetCurrentAmmoType()
+    {
+        return ammoType;
     }
 }

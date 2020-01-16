@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Ammo : MonoBehaviour
 {
     [SerializeField] AmmoSlot[] ammoSlots;
+    [SerializeField] Text ammoText;
 
     [System.Serializable]
     private class AmmoSlot
@@ -38,5 +40,10 @@ public class Ammo : MonoBehaviour
 
         Debug.LogError("Ammo type don't exist on player");
         return null;
+    }
+
+    public void UpdateUI(AmmoType ammoType)
+    {
+        ammoText.text = GetAmmoSlot(ammoType).ammoAmount.ToString();
     }
 }
