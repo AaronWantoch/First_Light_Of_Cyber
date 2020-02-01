@@ -40,6 +40,7 @@ public class Weapon : MonoBehaviour
         if (ammo.GetAmmoAmount(ammoType) > 0)
         {
             UseMuzzleFlash();
+            PlayShootSound();
             ProcessRaycast();
             ammo.DecreaseAmmoAmount(ammoType);
             ammo.UpdateUI(ammoType);
@@ -73,6 +74,11 @@ public class Weapon : MonoBehaviour
         }
 
         enemyHealth.DecreaseHealth(damage);
+    }
+
+    private void PlayShootSound()
+    {
+        GetComponent<AudioSource>().Play();
     }
 
     private void GenerateHitParticles(RaycastHit hit)

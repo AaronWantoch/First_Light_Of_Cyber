@@ -235,7 +235,7 @@ CapsuleCollider:
   m_Radius: 0.7608639
   m_Height: 2.250722
   m_Direction: 1
-  m_Center: {x: 2.0752985e-15, y: 0, z: 0.2608639}
+  m_Center: {x: 0, y: 0, z: 0.62}
 --- !u!114 &5390204040312883508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -350,6 +350,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26857dd98b483e4408b2e277c3d978d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeDisplaying: 5
+  damageCanvas: {fileID: 0}
 --- !u!1 &6128495900781984318
 GameObject:
   m_ObjectHideFlags: 0
