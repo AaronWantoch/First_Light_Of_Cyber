@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ammoType: 0
   amount: 5
-  destroyDelay: 1
+  destroyDelay: 0.8
 --- !u!135 &7708877728814624875
 SphereCollider:
   m_ObjectHideFlags: 0

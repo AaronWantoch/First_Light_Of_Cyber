@@ -21,6 +21,8 @@ public class EnemyAttack : MonoBehaviour
     {
         target.DecreaseHealth(damage);
         target.GetComponent<DisplayDamage>().Display();
+
+        GetComponent<ParticleSystem>().Play();
         //particle.Play();
     }
 }
