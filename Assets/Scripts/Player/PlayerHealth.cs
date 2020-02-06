@@ -23,5 +23,8 @@ public class PlayerHealth : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+
+        FindObjectOfType<Weapon>().enabled = false;
+        FindObjectOfType<WeaponZoom>().enabled = false;
     }
 }

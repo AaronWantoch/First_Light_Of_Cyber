@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7114065941483768710}
   - component: {fileID: 7114065941485063078}
   - component: {fileID: 7114065941486192998}
-  - component: {fileID: 5078446568628201136}
+  - component: {fileID: 1029085118570563442}
   m_Layer: 0
   m_Name: Must_Car
   m_TagString: Untagged
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &5078446568628201136
-BoxCollider:
+--- !u!64 &1029085118570563442
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,9 +94,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.027425542, y: 0.015557119, z: 0.060407285}
-  m_Center: {x: -0.000070050824, y: 0.006778492, z: -0.0010827016}
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 41a2cfcf4d349c745983dbc388fe49a9, type: 3}
 --- !u!1001 &219417731956954522
 PrefabInstance:
   m_ObjectHideFlags: 0

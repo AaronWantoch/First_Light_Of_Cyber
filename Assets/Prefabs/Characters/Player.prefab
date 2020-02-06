@@ -350,7 +350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26857dd98b483e4408b2e277c3d978d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeDisplaying: 5
+  timeDisplaying: 3
   damageCanvas: {fileID: 0}
 --- !u!1 &6128495900781984318
 GameObject:

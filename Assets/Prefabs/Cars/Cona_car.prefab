@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5567947194537186300}
   - component: {fileID: 5567947194540086236}
   - component: {fileID: 5567947194538955036}
-  - component: {fileID: 361839041285848978}
+  - component: {fileID: 2872259113998431500}
   m_Layer: 0
   m_Name: Cona_car
   m_TagString: Untagged
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &361839041285848978
-BoxCollider:
+--- !u!64 &2872259113998431500
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,9 +94,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.030656254, y: 0.019350346, z: 0.07006703}
-  m_Center: {x: 0.00020816828, y: 0.008657204, z: -0.0016356184}
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: e0c58b9064a0d7a4dae8dcf6bed935b5, type: 3}
 --- !u!1001 &322254987776544963
 PrefabInstance:
   m_ObjectHideFlags: 0
